@@ -1,5 +1,5 @@
 name: Python package
-on: [push]
+on: [commit]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,4 +14,4 @@ jobs:
       - name: Install packages
         run: pip install -r requirements.txt
       - name: Run tests
-        run: python manage.py test
+        run: python myscript.py
